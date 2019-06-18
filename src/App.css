@@ -37,6 +37,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width: 500px;
 }
 .movie-box > p {
   text-align: center;
@@ -46,10 +47,43 @@
   list-style-position: outside;
 }
 
-.App :hover {
+.movie-box:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition: 0.3s;
+}
+.button {
+  background: transparent;
+  border: none;
+}
+.button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+.image {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 80%;
+}
+.imageList {
+  width: 80%;
 }
 
 @keyframes App-logo-spin {
